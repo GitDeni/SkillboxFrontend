@@ -7,9 +7,29 @@ $(document).ready(function(){
 	autoplay: true,
 	autoplaySpeed: 5000,
 	cssEase: 'ease-in-out',
+	dots: true,
+	responsive: [
+    {
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 2,
+      }
+    },
+    {
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1,
+        slidesToScroll: 1
+      }
+    }
+    // You can unslick at a given breakpoint now by adding:
+    // settings: "unslick"
+    // instead of a settings object
+  ]
 	/*nextArrow: '<button class="next"><div class="mask"></div></button>',
 	prevArrow: '<button class="prev"></button>',*/
   });
+
 
 
   $(function(){
