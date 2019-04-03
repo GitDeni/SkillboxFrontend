@@ -268,7 +268,7 @@
 }
 
 @media (max-width: 650px) {
-  .callback:first-of-type {
+  .header__phone .callback {
     display: none;
   }
   .header__callback_mobile {
@@ -284,23 +284,86 @@
   .flying-elements {
     display: none;
   }
+    .bubble {
+    right: 0;
+  }
+  .bubble img {
+    left: 120px;
+  }
   [class|="skills__unit"] {
     width: 100%;
   }
 }
 
 
-@media (max-width: 570px) {
-  .burger {
+@media (max-width: 575px) {
+  main > section {
+    padding-top: 50px;
+  }
+  .header__burger {
     width: 24px;
     height: 18px;
   }
-  .bubble {
-    right: 0;
+    .header__phone {
+    font-size: 18px;
   }
-  .mobile-call {
+  .header__callback_mobile {
     width: 26px;
     height: 26px;
+  }
+  .about h1 {
+    font-size: 30px;
+    margin-top: 40px;
+  }
+  .about h3 {
+    font-size: 16px;
+  }
+  h2 {
+    font-size: 30px;
+  }
+  .skills .container {
+    padding-top: 50px;
+  }
+  [class|="skills__unit"] {
+    margin-bottom: 50px;
+  }
+  .find-out-more,
+  .callback,
+  .order,
+  .see-price {
+    font-size: 16px;
+  }
+  .see-price {
+    margin: 0 auto 50px;
+  }
+  .works__carousel div {
+    font-size: 18px;
+  }
+  .price {
+    padding-bottom: 50px;
+  }
+  .price h3 {
+    font-size: 28px;
+  }
+  .contacts {
+    padding-bottom: 0;
+  }
+
+  .contacts__personal {
+    width: 100%;
+    margin-top: 40px;
+  }
+  .contacts__personal a {
+    font-size: 20px;
+    color: #8993ad;
+  }
+  .contacts__social {
+    margin: 40px 0;
+  }
+  .contacts__social .callback {
+    background-color: #ff4e2e;
+    color: #ffffff;
+    border: none;
   }
 }
 
@@ -309,7 +372,7 @@
     padding-left: 20px;
     padding-right: 20px;
   }
-  .phone {
-    font-size: 18px;
+  .header__phone {
+    font-size: 16px;
   }
 }
