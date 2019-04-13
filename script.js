@@ -40,11 +40,33 @@ $(document).ready(function(){
 	});
 
 
-$('.callback').click(function(e) {
-	e.preventDefault();
-	$('.popup-callback').show();
-	console.log(1);
-})
+	$('.callback').click(function(e) {
+		e.preventDefault();
+		$('.popup-callback').show();
+	});
+
+	$('.popup-callback, .popup-find-out-more').click(function(e){
+			if(event.target == this){
+		$(this).hide();
+	};
+
+	$('body').on('click', '.find-out-more, .see-price', function(e){
+		e.preventDefault();
+		$('.popup-find-out-more').show();
+	})
+
+/*	$('.find-out-more').click(function(e) {
+		e.preventDefault();
+		$('.popup-find-out-more').show();
+	});*/
+
+	/*$('.popup-find-out-more').click(function(e){
+			if(event.target == this){
+		$(this).hide();
+	};
+*/
+
+	})
 
   
 });

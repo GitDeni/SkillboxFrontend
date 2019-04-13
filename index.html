@@ -29,13 +29,22 @@
 </head>
 <body>
   <div class="popup-callback">
-    <div class="popup-callback__form">
-        <form method="get">
-            <h3>Оставьте свой номер, и я Вам перезвоню</h3>
-            <input type="tel" name="">
-        </form>
-    </div>
-</div>
+    <form method="get" class="popup-callback__form">
+      <h3>Оставьте свой номер, и&nbsp;я&nbsp;Вам перезвоню</h3>
+      <input type="text" name="name" id="callback__name" maxlength="20" placeholder="Имя">
+      <input type="tel" name="tel" id="callback__tel" maxlength="11" placeholder="Телефон">
+      <button type="submit" class="popup-callback__submit">Заказать звонок</button>
+    </form>
+  </div>
+    <div class="popup-find-out-more">
+      <form method="get" class="popup-find-out-more__form">
+        <h3>Напишите мне, и&nbsp;я&nbsp;Вам отвечу в&nbsp;ближайшее время</h3>
+        <input type="text" name="name" id="find-out-more__name" maxlength="20" placeholder="Имя">
+        <input type="email" name="mail" id="find-out-more__mail" placeholder="E-mail">
+        <textarea name="find-out-more__question" id="find-out-more__question"></textarea>
+        <button type="submit" class="popup-find-out-more__submit">Отправить</button>
+      </form>
+  </div>
   <header class="header">
     <div class="container">
       <button class="header__burger"></button>
