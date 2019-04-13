@@ -23,14 +23,10 @@ $(document).ready(function(){
         arrows: false
       }
     }
-    // You can unslick at a given breakpoint now by adding:
-    // settings: "unslick"
-    // instead of a settings object
   ]
-	/*nextArrow: '<button class="next"><div class="mask"></div></button>',
-	prevArrow: '<button class="prev"></button>',*/
   });
 
+// smooth scroll
   $(function(){
 	$("a[href^='#']").click(function(){
 		var _href = $(this).attr("href");
@@ -39,8 +35,8 @@ $(document).ready(function(){
 		});
 	});
 
-
-	$('.callback').click(function(e) {
+// popups
+	$('.callback, .header__callback_mobile').click(function(e) {
 		e.preventDefault();
 		$('.popup-callback').show();
 	});
@@ -50,16 +46,30 @@ $(document).ready(function(){
 		$(this).hide();
 	}; });
 
-	$('.find-out-more, .see-price').click(function(e) {
+	$('.find-out-more, .see-price, .order').click(function(e) {
 		e.preventDefault();
 		$('.popup-find-out-more').show();
 	});
 
-	$('.popup-find-out-more, .see-price').click(function(e){
+	$('.popup-find-out-more').click(function(e){
 			if(event.target == this){
 		$(this).hide();
-	};
-	})
+	}; });
+
+	$('.popup-callback__submit').click(function(e){
+		e.preventDefault();
+	});
+	$('.popup-find-out-more__submit').click(function(e){
+		e.preventDefault();
+	});
+
+
+	//burger
+	$('.header__burger').click(function(e){
+		e.preventDefault();
+		$('.mobile__menu').slideToggle();
+	});
+
 
   
 });

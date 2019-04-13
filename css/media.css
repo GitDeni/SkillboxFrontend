@@ -213,6 +213,10 @@
 }
 
 @media (max-width: 905px) {
+  .popup-callback__form,
+  .popup-find-out-more__form {
+    width: 60%;
+  }
   .about .container {
     padding: 0;
   }
@@ -266,6 +270,13 @@
 
 }
 
+
+@media (max-width: 670px) {
+  .mobile__menu {
+    width: 30%;
+  }
+}
+
 @media (max-width: 650px) {
   .header__phone .callback {
     display: none;
@@ -292,6 +303,13 @@
   [class|="skills__unit"] {
     width: 100%;
   }
+  .popup-callback__form input,
+  .popup-find-out-more__form input,
+  .popup-find-out-more textarea,
+  .popup-callback__submit,
+  .popup-find-out-more__submit {
+    width: 100%;
+  }
 }
 
 
@@ -310,6 +328,7 @@
     width: 26px;
     height: 26px;
   }
+  
   .about h1 {
     font-size: 30px;
     margin-top: 40px;
@@ -367,6 +386,10 @@
 }
 
 @media (max-width: 400px) {
+  .popup-callback__form,
+  .popup-find-out-more__form {
+    width: 95%;
+  }
   .container {
     padding-left: 20px;
     padding-right: 20px;
