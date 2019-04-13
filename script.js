@@ -45,27 +45,20 @@ $(document).ready(function(){
 		$('.popup-callback').show();
 	});
 
-	$('.popup-callback, .popup-find-out-more').click(function(e){
+	$('.popup-callback').click(function(e){
+			if(event.target == this){
+		$(this).hide();
+	}; });
+
+	$('.find-out-more, .see-price').click(function(e) {
+		e.preventDefault();
+		$('.popup-find-out-more').show();
+	});
+
+	$('.popup-find-out-more, .see-price').click(function(e){
 			if(event.target == this){
 		$(this).hide();
 	};
-
-	$('body').on('click', '.find-out-more, .see-price', function(e){
-		e.preventDefault();
-		$('.popup-find-out-more').show();
-	})
-
-/*	$('.find-out-more').click(function(e) {
-		e.preventDefault();
-		$('.popup-find-out-more').show();
-	});*/
-
-	/*$('.popup-find-out-more').click(function(e){
-			if(event.target == this){
-		$(this).hide();
-	};
-*/
-
 	})
 
   

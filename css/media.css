@@ -1,7 +1,6 @@
 @media (max-width: 1370px) {
   .about .container {
     position: relative;
-    overflow: hidden;
     margin-right: 0;
   }
   .bubble {
