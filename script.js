@@ -31,8 +31,6 @@ $(document).ready(function(){
 	prevArrow: '<button class="prev"></button>',*/
   });
 
-
-
   $(function(){
 	$("a[href^='#']").click(function(){
 		var _href = $(this).attr("href");
@@ -40,6 +38,13 @@ $(document).ready(function(){
 		return false;
 		});
 	});
+
+
+$('.callback').click(function(e) {
+	e.preventDefault();
+	$('.popup-callback').show();
+	console.log(1);
+})
 
   
 });
