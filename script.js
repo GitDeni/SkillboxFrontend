@@ -1,4 +1,14 @@
 $(document).ready(function(){
+
+//masked input
+	var telInp = $('input[type="tel"]');   
+	telInp.each(function(){
+	  $(this).mask("+7 (999) 999-99-99");
+	});
+	
+
+
+// slick
   $('.works__carousel').slick({
 	infinite: true,
 	slidesToShow: 3,
