@@ -160,7 +160,7 @@ main {
 }
 
 .header .container {
-  margin-top: 15px;
+  margin-top: 25px;
   justify-content: space-between;
   align-items: center;
 }
@@ -399,13 +399,16 @@ main {
   top: 225px;}
 }
 
+.about {
+
+}
 .about .container {
-  padding-bottom: 130px;
+  padding-bottom: 230px;
 }
 
 .about h1 {
-  margin-top: 155px;
-  margin-bottom: 25px;
+  margin-top: 150px;
+  margin-bottom: 12px;
   font-family: 'Roboto';
   font-weight: 900;
   font-size: 80px;
@@ -436,29 +439,23 @@ main {
   background-color: #ff4e2e;
   color: #fff;
 }
-/*@keyframes shadow {
-  0% {
-    box-shadow: 0 0 2px 0px #ff4e2e, 0 0 2px 0px #ff4e2e; 
-  }
-  100% {
-    box-shadow: 0 0 5px 3px rgba(255, 48, 26, 0), 0 0 4px 8px rgba(255, 48, 26, 0); 
-  } 
-}*/
 
 .bubble {
   background-image: url('../img/big-bubble.svg');
   background-repeat: no-repeat;
-  width: 620px;
-  height: 540px;
+  background-position: 100% 100%;
+  background-size: 97%;
+  width: 920px;
+  height: 640px;
   position: absolute;
-  right: 0;
-  top: 125px;
+  right: -85px;
+  top: 130px;
 }
 .bubble img {
-  width: 350px;
+  width: 427px;
   z-index: 1;
   position: absolute;
-  left: 80px;
+  left: 110px;
   bottom: 0;  
 }
 
@@ -479,7 +476,7 @@ h2 {
 }
 
 .skills .container {
-  padding-top: 100px;
+  padding-top: 90px;
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
@@ -500,6 +497,7 @@ h2 {
 }
 
 .skills__caption {
+  font-size: 20px;
   text-align: center;
 }
 
@@ -536,7 +534,7 @@ h2 {
   border: none;
   outline: none;
   cursor: pointer;
-  margin: 95px auto;
+  margin: 105px auto;
   transition: all .2s;
 }
 .see-price:hover {
@@ -581,7 +579,7 @@ h2 {
   border: none;
   outline: none;
   cursor: pointer;
-  margin: 95px auto;
+  margin: 55px auto 105px;
   transition: all .2s;
 }
 
@@ -596,6 +594,7 @@ h2 {
   background: linear-gradient(30deg, #ff8f5a, #ff2f96);
   color: #ffffff;
   font-size: 18px;
+  padding-top: 80px;
   padding-bottom: 85px;
 }
 
@@ -703,6 +702,7 @@ h2 {
 
 .contacts {
   background-color: #ffffff;
+  padding-top: 80px;
   padding-bottom: 75px;
 }
 
@@ -763,7 +763,7 @@ h2 {
   color: #ff2f96;
 }
 .contacts__social {
-  width: 30%;
+  width: 23%;
 }
 
 .contacts__social .callback {

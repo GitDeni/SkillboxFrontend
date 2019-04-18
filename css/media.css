@@ -1,11 +1,21 @@
+@media (max-width: 1580px) {
+  .bubble {
+    right: -190px;
+  }
+}
+
+
+
+
 @media (max-width: 1370px) {
   .about .container {
     position: relative;
     margin-right: 0;
   }
   .bubble {
+    height: 625px;
     top: 0;
-    right: -170px;
+    right: -350px;
   }
   .flying-elements__brackets_top {
     left: -30px;
@@ -126,16 +136,31 @@
   
   .about h1 {
     font-size: 54px;
+    margin-top: 175px;
+    margin-bottom: 20px;
+  }
+  
+  .bubble {
+    background-size: contain;
+    height: 500px;
+    top: 125px;
+    right: -150px;
+  }
+  .bubble img {
+    left: 300px;
   }
   [class|="skills__unit"] {
     width: 45%;
     margin-bottom: 80px;
   }
+  .skills .container {
+    padding: 90px 160px 0;
+  }
   .skills__caption {
-    width: 50%;
+    width: 90%;
   }
   .see-price {
-    margin-top: 0;
+    margin-top: 20px;
   }
   .price .container {
     padding: 0 40px;
@@ -218,14 +243,16 @@
     width: 60%;
   }
   .about .container {
-    padding: 0;
+    padding: 600px 0 0;
   }
   .find-out-more {
     margin: 20px auto;
   }
   .bubble {
-    order: -1;
-    position: relative;
+    right: -50px;
+  }
+  .bubble img {
+    left: 400px;
   }
   .info {
     width: 100%;
@@ -268,8 +295,7 @@
     top: -270px;}
   }
 
-}
-
+} 
 
 @media (max-width: 670px) {
   .mobile__menu {
@@ -288,21 +314,18 @@
     display: flex;
     align-items: center;
   }
+    [class|="skills__unit"] {
+    width: 100%;
+  }
 }
+
 
 @media (max-width: 620px) {
   .flying-elements {
     display: none;
   }
-    .bubble {
-    right: 0;
-  }
-  .bubble img {
-    left: 120px;
-  }
-  [class|="skills__unit"] {
-    width: 100%;
-  }
+  
+
   .popup-callback__form input,
   .popup-find-out-more__form input,
   .popup-find-out-more textarea,
@@ -328,7 +351,9 @@
     width: 26px;
     height: 26px;
   }
-  
+  .about .container {
+    padding-top: 340px;
+  }
   .about h1 {
     font-size: 30px;
     margin-top: 40px;
@@ -336,11 +361,21 @@
   .about h3 {
     font-size: 16px;
   }
+  
+  .bubble {
+    height: 300px;
+    top: 60px;
+    right: 0;
+  }
+  .bubble img {
+    width: 235px;
+    left: 600px;
+  }
   h2 {
     font-size: 30px;
   }
   .skills .container {
-    padding-top: 50px;
+    padding: 50px 100px 0;
   }
   [class|="skills__unit"] {
     margin-bottom: 50px;
@@ -396,5 +431,17 @@
   }
   .header__phone {
     font-size: 16px;
+  }
+  .about h3 {
+    margin-bottom: 25px;
+  }
+  .bubble {
+    right: -70px;
+  }
+  main > section {
+    padding-top: 20px;
+}
+  .skills .container {
+    padding: 50px 50px 0;
   }
 }
