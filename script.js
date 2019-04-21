@@ -62,7 +62,7 @@ $('input[type="tel"]').click(function(){
 // popups
 	$('.callback, .header__callback_mobile').click(function(e) {
 		e.preventDefault();
-		$('.popup-callback').show();
+		$('.popup-callback').css('display', 'flex');
 	});
 
 	$('.popup-callback').click(function(e){
@@ -72,7 +72,7 @@ $('input[type="tel"]').click(function(){
 
 	$('.find-out-more, .see-price, .order').click(function(e) {
 		e.preventDefault();
-		$('.popup-find-out-more').show();
+		$('.popup-find-out-more').css('display', 'flex');
 	});
 
 	$('.popup-find-out-more').click(function(e){
