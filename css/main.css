@@ -568,6 +568,52 @@ h2 {
   margin-top 20px;
 }
 
+.prev {
+    background-image: url('../img/arrow.png');
+    z-index: 2;
+    box-shadow: 0 0 2rem rgba(0, 0, 0, 0.08);
+    border-radius: 50%;
+    opacity: 0.75;
+    position: absolute;
+    top: 50%;
+    left: -2%;
+    display: block;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    cursor: pointer;
+    border: none;
+    outline: none;
+}
+
+.next {
+  background-image: url('../img/arrow.png');
+  -webkit-transform: rotate(180deg);
+  -moz-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+  z-index: 2;
+  box-shadow: 0 0 2rem rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
+  opacity: 0.75;
+  position: absolute;
+  top: 50%;
+  left: 98%; 
+  display: block;
+  width: 60px;
+  height: 60px;
+  padding: 0;
+  cursor: pointer;
+  border: none;
+  outline: none;
+}
+
+.prev:hover,
+.next:hover {
+  opacity: 1;
+}
+
 .order {
   width: 270px;
   height: 60px;

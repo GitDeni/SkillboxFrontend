@@ -32,6 +32,8 @@ $('input[type="tel"]').click(function(){
 	autoplaySpeed: 5000,
 	cssEase: 'ease-in-out',
 	dots: true,
+	nextArrow: '<button class="next"></button>',
+	prevArrow: '<button class="prev"></button>',
 	responsive: [
     {
       breakpoint: 1030,
