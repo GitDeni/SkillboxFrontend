@@ -96,6 +96,21 @@ $('input[type="tel"]').click(function(){
 		$('.mobile__menu').slideToggle();
 	});
 
+  //price section animation
+  var windowHeight = $(window).height();
+ 
+  $(document).on('scroll', function() {
+    var priceSection = $('#price');
+    var height = priceSection.offset().top + priceSection.height();
+      if ($(document).scrollTop() + windowHeight >= height) {
+        $('.p__brackets_l').addClass('flying-elements-price__brackets_left');
+        $('.p__hashtag').addClass('flying-elements-price__hashtag');
+        $('.p__div').addClass('flying-elements-price__div');
+        $('.p__slash').addClass('flying-elements-price__slash');
+        $('.p__brackets_r').addClass('flying-elements-price__brackets_right');
+    };
+  });
+
 
   
 });
